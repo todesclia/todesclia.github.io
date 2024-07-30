@@ -1,0 +1,77 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global Variables */
+:root {
+
+    /* Colors */
+    --brand: #ecf5ff;
+    --brand-alt: #44F1A6;
+    --action: #fbfdff;
+    --action-alt: #cce2e1;
+    --base-lightest: #b4d9e9;
+    --base-lighter: #c9e8f7;
+
+    /*  inherited colors  */
+    --text: #333952;
+}
+
+/* set default font style here */
+html, body {
+    font-family: 'Raleway', sans-serif;
+    font-size:18px;
+  }
+  
+  /* Add Heading styles here  */
+  h1 {
+  font-family: 'Raleway', serif;
+  }
+  h2 {
+  
+  }
+  h3 {
+  
+  }
+  h4 {
+  
+  }
+  h5{
+  
+  }
+  h6{
+  
+  }
+  
+  /* style to make style guide */
+  body {
+    /*padding: 20px;*/
+  }
+  .colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .colors div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+  }
+  .brand {
+    background-color: var(--brand);
+  }
+  .brand-alt {
+    background-color: var(--brand-alt);
+  }
+  .action {
+    background-color: var(--action);
+  }
+  .action-alt {
+    background-color: var(--action-alt);
+  }
+  .base-lightest {
+    background-color: var(--base-lightest);
+  }
+  .base-lighter {
+    background-color: var(--base-lighter);
+  }
+  
