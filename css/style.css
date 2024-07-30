@@ -10,47 +10,66 @@
     --action: #fbfdff;
     --action-alt: #cce2e1;
     --base-lightest: #b4d9e9;
-    --base-lighter: #c9e8f7;
+    --base-lighter: #b7f3d9;
 
     /*  inherited colors  */
     --text: #333952;
 }
 
-/* set default font style here */
+/* set default font style */
 html, body {
     font-family: Raleway, sans-serif;
-    font-size:36px;
+    font-size:22px;
     font-weight: 300;
-    background-color:#ecf5ff;
+    background-color: var(--brand);
     width: 90%;
     margin: 0 auto;
   }
-
-#header {
+/* .hero */
+.hero {
+  background-color: var(--brand-alt);
+  border-radius: 10px;
   margin: 10px auto 10px auto;
-  padding: 20px;
-  border: 4px double #44F1A6;
+  border: solid red 1px;
 }
-
-#content {
+.hero h1 {
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+}
+.hero .hero-accent {
+  color: var(--action);
+}
+.content {
   overflow: auto;
-}
-  
-/* Add Heading styles here  */
-h1 {
-  font-family: Raleway, sans-serif;
-  font-size:60px;
-  font-weight: 400;
-}
-h2 {
 
+}  
+.nav {
+  margin: 1%;
+  border: solid red 1px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
-h3 {
-
+article {
+  padding: 10px 10px;
+  background-color: var(--base-lighter);
+  border-radius: 10px;
+  margin: 5px 10px;
+  transition: all 0.3s ease;
 }
-p.shape {
-padding: 0px;
-border-radius: 100px;
-border-color: #44F1A6;
+article:hover {
+  filter: contrast(150%);
 }
+article .icon {
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+li {
+  display: inline;
+  padding: 0.5em;
+}
+/*border: solid red 1px;*/
   
