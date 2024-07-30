@@ -18,60 +18,39 @@
 
 /* set default font style here */
 html, body {
-    font-family: 'Raleway', sans-serif;
-    font-size:18px;
+    font-family: Raleway, sans-serif;
+    font-size:36px;
+    font-weight: 300;
+    background-color:#ecf5ff;
+    width: 90%;
+    margin: 0 auto;
   }
+
+#header {
+  margin: 10px auto 10px auto;
+  padding: 20px;
+  border: 4px double #44F1A6;
+}
+
+#content {
+  overflow: auto;
+}
   
-  /* Add Heading styles here  */
-  h1 {
-  font-family: 'Raleway', serif;
-  }
-  h2 {
-  
-  }
-  h3 {
-  
-  }
-  h4 {
-  
-  }
-  h5{
-  
-  }
-  h6{
-  
-  }
-  
-  /* style to make style guide */
-  body {
-    /*padding: 20px;*/
-  }
-  .colors {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .colors div {
-    width: 100px;
-    height: 100px;
-    border: 1px solid red;
-  }
-  .brand {
-    background-color: var(--brand);
-  }
-  .brand-alt {
-    background-color: var(--brand-alt);
-  }
-  .action {
-    background-color: var(--action);
-  }
-  .action-alt {
-    background-color: var(--action-alt);
-  }
-  .base-lightest {
-    background-color: var(--base-lightest);
-  }
-  .base-lighter {
-    background-color: var(--base-lighter);
-  }
+/* Add Heading styles here  */
+h1 {
+  font-family: Raleway, sans-serif;
+  font-size:60px;
+  font-weight: 400;
+}
+h2 {
+
+}
+h3 {
+
+}
+p.shape {
+padding: 0px;
+border-radius: 100px;
+border-color: #44F1A6;
+}
   
