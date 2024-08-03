@@ -30,7 +30,6 @@ html, body {
   background-color: var(--brand-alt);
   border-radius: 10px;
   margin: 10px auto 10px auto;
-  border: solid red 1px;
 }
 .hero h1 {
   font-size: 60px;
@@ -46,10 +45,17 @@ html, body {
 }  
 .nav {
   margin: 1%;
-  border: solid red 1px;
   display: flex;
   justify-content: flex-end;
+}
+.articles-container {
+  display: flex;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  .articles-container {
+      flex-direction: row;
+  }
 }
 article {
   padding: 10px 10px;
@@ -71,5 +77,52 @@ li {
   display: inline;
   padding: 0.5em;
 }
+/* .contact-form */
+ .contact-form {
+     padding: 48px 16px;
+     border-radius: 10px;
+     margin: 5px 10px;
+   }
+   
+   .contact-form input,
+   .contact-form select {
+     display: block;
+     width: 100%;
+     padding: 8px;
+     margin-bottom: 16px;
+   }
+   
+   .contact-form textarea {
+     display: block;
+     width: 100%;
+     padding: 8px;
+   }
+   
+   .contact-form label {
+     display: block;
+     width: 100%;
+   }
+   
+   .contact-form h2 {
+     color: var(--base-dark);
+     margin-bottom: 16px;
+   }
+   
+   .contact-form input[type="submit"] {
+     background-color: var(--action);
+     border: 0;
+     margin-top: 8px;
+     cursor: pointer;
+   }
+    /* footer */
+ footer {
+   padding: 16px;
+   text-align: center;
+ }
+ 
+ .socials-icon {
+   width: 40px;
+   height: 40px;
+ }
 /*border: solid red 1px;*/
   
