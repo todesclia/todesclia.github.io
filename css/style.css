@@ -93,8 +93,6 @@ body {
   align-items: center;
   gap: 20px;
   padding: 30px 0px 30px 0px;
-  /* top: 0; */
-  /* position: sticky; */
 }
 
 .hero h1 {
@@ -102,10 +100,6 @@ body {
   font-weight: 300;
   text-align: center;
   color: var(--text);
-}
-
-.hero .hero-accent {
-  color: var(--action);
 }
 
 .profile-pic {
@@ -121,9 +115,15 @@ body {
   padding: 10px 15px 10px 15px;
   box-shadow: 3px 3px var(--shadow-dark);
   text-decoration: none;
+  margin: 5px;
   color: var(--text);
 }
 
+.nav-button:hover {
+  background-color: var(--base-lightest);
+}
+
+/* articles */
 .articles-container {
   display: flex;
   flex-direction: column;
@@ -163,7 +163,6 @@ article .article-button {
 }
 
 article:hover {
-  /* filter: contrast(250%); */
   background-color: var(--base-lightest);
 }
 
@@ -213,6 +212,9 @@ textarea {
   color: var(--text);
   cursor: pointer;
 }
+.contact-form button:hover {
+  background-color: var(--base-lightest);
+}
 
 /* footer */
 footer {
@@ -240,5 +242,3 @@ footer {
     padding: 20px;
   }
 }
-
-/*border: solid red 1px;*/
