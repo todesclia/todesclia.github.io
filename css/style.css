@@ -9,7 +9,7 @@
   --brand-alt: #c1bdff;
   --action: #ffff;
   --action-alt: #cce2e1;
-  --base-lightest: #454646;
+  --base-lightest: #ccf3e7;
   --base-lighter: #ffff;
   --shadow-dark: #282466;
 
@@ -130,6 +130,7 @@ body {
 }
 
 .articles-container h2 {
+  color: var(--text);
   text-align: center;
 }
 
@@ -162,7 +163,8 @@ article .article-button {
 }
 
 article:hover {
-  filter: contrast(150%);
+  /* filter: contrast(250%); */
+  background-color: var(--base-lightest);
 }
 
 .articles-container p {
@@ -173,10 +175,8 @@ article:hover {
   line-height: 1.3;
 }
 
-
 li {
   display: inline;
-  /* gap: 5px; */
 }
 
 /* .contact-form */
@@ -214,9 +214,6 @@ textarea {
   cursor: pointer;
 }
 
-
-
-
 /* footer */
 footer {
   padding: 16px;
@@ -228,9 +225,20 @@ footer {
   height: 40px;
 }
 
-/* @media (min-width: 768px) {
-  .articles-container {
-      flex-direction: row;
+@media (min-width: 600px) {
+  .articles-container h2 {
+    display: none;
   }
-} */
+  .articles-container {
+    display: flex;
+    width: 100%;
+    text-align: justify;
+    flex-direction: row;
+    align-items: top;
+  }
+  article {
+    padding: 20px;
+  }
+}
+
 /*border: solid red 1px;*/
