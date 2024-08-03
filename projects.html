@@ -1,31 +1,73 @@
- <!DOCTYPE html>
- <html lang="en">
-
- <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.css">
-   <title>My Profile</title>
- </head>
- <body>
-    <header class="hero">    
-        <h1>Todesco</h1>
-        <nav class="nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact_form.html">Contact</a></li>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My Profile</title>
+  </head>
+  <body>
+    <header class="hero">
+      <img class="profile-pic" src="images/profile_pic.jpeg" />
+      <h1>Todesco</h1>
+      <nav>
+        <ul>
+          <li><a class="nav-button" href="index.html">Home</a></li>
+          <li><a class="nav-button" href="about.html">About</a></li>
+          <li><a class="nav-button" href="contact_form.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section class="contact-form">
-        <h2>Projects</h2>
-    
-    </section>
+    <main>
+      <section class="articles-container">
+        <article>
+          <img
+            class="icon"
+            src="images/design.png"
+            alt="Illustration by Icons 8 from Ouch!"
+          />
+          <p>HTML and CSS Newbie: My web dev adventure.</p>
+          <a href="projects.html" class="article-button">Read more...</a>
+        </article>
+        <article>
+          <img
+            class="icon"
+            src="images/python.png"
+            alt="Illustration by Icons 8 from Ouch!"
+          />
+          <p>
+            Python Shenanignas: picture this, me a cup of coffee and a
+            determination to conquer Python.
+          </p>
+          <a href="projects.html" class="article-button">Read more...</a>
+        </article>
+        <article>
+          <img
+            class="icon"
+            src="images/brain.png"
+            alt="Illustration by Icons 8 from Ouch!"
+          />
+          <p>On this project I did blah blah blah.</p>
+          <a href="projects.html" class="article-button">Read more...</a>
+        </article>
+      </section>
+    </main>
     <footer>
-    This is the footer
+      <a
+        href="https://www.linkedin.com/in/lisa-todesco-51aab129/?originalSubdomain=au"
+        target="_blank"
+        ><img
+          class="socials-icon"
+          src="images/linkedin.png"
+          alt="LinkedIn Profile - Lisa Todesco"
+      /></a>
+      <a href="https://github.com/todesclia" target="_blank"
+        ><img
+          class="socials-icon"
+          src="images/github.svg"
+          alt="GitHub Profile - Lisa Todesco"
+      /></a>
     </footer>
   </body>
- </html>
+</html>
