@@ -16,12 +16,22 @@ The project also includes interactive styles to enhance user experience and acce
 > 
 > You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code: 
 
-####  image_title_goes_here 
+####  HomePage on Iphone
 ![Home Page on iPhone](./images/iphone-home.png)
+
+####  Contact Page on Iphone
 ![Contact Page on iPhone](./images/iphone-contact.png)
+
+####  Projects Page on Iphone
 ![Projets Page on iPhone](./images/iphone-projects.png)
+
+####  HomePage on Desktop
 ![Home Page on Desktop](./images/desktop-home.png)
+
+####  Hover on button on Iphone
 ![Button Hover](./images/hover.png)
+
+####  Hover on button on Desktop
 ![Another Button Hover](./images/button-hover.png)
 
 
