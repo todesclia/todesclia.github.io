@@ -397,16 +397,9 @@ footer {
   padding: var(--spacing-unit) 0;
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 2rem;
-  align-items: start;
-}
-
-.about-image img {
-  width: 100%;
-  border-radius: 10px;
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .about-content h2 {
