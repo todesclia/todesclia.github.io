@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>My Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Projects | Lisa Todesco</title>
   </head>
   <body>
     <header class="hero">
-      <img class="profile-pic" src="images/profile_pic.jpeg" />
-      <h1>Todesco</h1>
-      <nav>
+      <div class="hero-content">
+        <h1>My Projects</h1>
+        <p class="subtitle">A collection of my work and experiments</p>
+      </div>
+      <nav class="main-nav">
         <ul>
           <li><a class="nav-button" href="index.html">Home</a></li>
           <li><a class="nav-button" href="about.html">About</a></li>
@@ -19,44 +24,165 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <section class="articles-container">
-        <h2>Projects</h2>
-        <article>
-          <img class="icon" src="images/design.png" alt="Design Icon" />
-          <p>HTML and CSS Newbie: My web dev adventure begins.</p>
-          <a href="projects.html" class="article-button">Read more...</a>
-        </article>
-        <article>
-          <img class="icon" src="images/python.png" alt="Python Icon" />
-          <p>
-            Python Shenanignas: picture this, me, a cup of coffee, and a
-            determination to conquer Python.
-          </p>
-          <a href="projects.html" class="article-button">Read more...</a>
-        </article>
-        <article>
-          <img class="icon" src="images/brain.png" alt="Brain Icon" />
-          <p>Django Unchained: Wrangling web apps with pythonic prowess.</p>
-          <a href="projects.html" class="article-button">Read more...</a>
-        </article>
+      <section class="projects-section">
+        <div class="container">
+          <article class="project-card">
+            <img class="project-img" src="images/portfolio-website.jpg" alt="Portfolio Website Screenshot" />
+            <div class="project-content">
+              <h2>Web Development Journey</h2>
+              <p>Starting from scratch with HTML and CSS, this portfolio website represents my first step into web development. 
+                Through this project, I've learned about responsive design, CSS Grid, Flexbox, and modern web development practices.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Responsive Design</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-img" src="images/python-automation.jpg" alt="Python Code Screenshot" />
+            <div class="project-content">
+              <h2>Python Weather Project</h2>
+              <p>A Python-based weather application built using Test-Driven Development (TDD). The app fetches real-time 
+                weather data and provides temperature conversions between Celsius and Fahrenheit. Features include 
+                input validation, error handling, and comprehensive unit tests.</p>
+              <p class="project-features">Key Features:
+                <ul>
+                  <li>Real-time weather data retrieval</li>
+                  <li>Temperature unit conversion</li>
+                  <li>Input validation and error handling</li>
+                  <li>100% test coverage</li>
+                </ul>
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Testing</span>
+                <span class="tech-tag">TDD</span>
+                <span class="tech-tag">API Integration</span>
+                <span class="tech-tag">Unit Testing</span>
+              </div>
+              <a href="https://github.com/todesclia/plus_weather_project/blob/main/README.md" 
+                 class="button" 
+                 target="_blank">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-img" src="images/django-project.jpg" alt="Django Application Screenshot" />
+            <div class="project-content">
+              <h2>RippleRise - Crowdfunding Platform</h2>
+              <p>A community-driven microgrants platform built with Django REST Framework. RippleRise enables local communities 
+                to propose and fund small-scale projects like community gardens, art installations, and neighborhood improvements.</p>
+              <p class="project-features">Key Features:
+                <ul>
+                  <li>Token-based authentication system</li>
+                  <li>Project creation and management</li>
+                  <li>Pledge system with anonymous options</li>
+                  <li>Role-based permissions</li>
+                  <li>RESTful API endpoints</li>
+                </ul>
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Heroku</span>
+              </div>
+              <a href="https://github.com/todesclia/crowdfunding_backend/blob/main/README.md" 
+                 class="button" 
+                 target="_blank">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-img" src="images/ripplerise-frontend.jpg" alt="RippleRise Frontend Screenshot" />
+            <div class="project-content">
+              <h2>RippleRise Frontend</h2>
+              <p>The React-based frontend for the RippleRise crowdfunding platform. This modern, responsive web application 
+                provides an intuitive interface for users to create, browse, and support community projects.</p>
+              <p class="project-features">Key Features:
+                <ul>
+                  <li>User authentication and profiles</li>
+                  <li>Project creation and management</li>
+                  <li>Secure pledge system</li>
+                  <li>Responsive design</li>
+                  <li>Custom 404 error handling</li>
+                </ul>
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">Netlify</span>
+                <span class="tech-tag">CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/todesclia/crowdfunding-frontend/blob/main/README.md" 
+                   class="button" 
+                   target="_blank">View Code</a>
+                <a href="https://moonlit-stroopwafel-09d7b2.netlify.app/" 
+                   class="button button-secondary" 
+                   target="_blank">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-img" src="images/goodlist-project.jpg" alt="The Good List Project Screenshot" />
+            <div class="project-content">
+              <h2>The Good List - Christmas Shopping Platform</h2>
+              <p>A collaborative Django-based platform that simplifies Christmas shopping planning. The Good List helps users 
+                organize wish lists and shopping lists with features like budget tracking, item ranking, and list sharing.</p>
+              <p class="project-features">Key Features:
+                <ul>
+                  <li>Token-based authentication system</li>
+                  <li>Category and list management</li>
+                  <li>Budget tracking and comparison</li>
+                  <li>Item ranking and favorites</li>
+                  <li>List sharing and collaboration</li>
+                </ul>
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">Token Auth</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/SheCodesAus/debugging_ducks_backend/blob/dev/README.md" 
+                   class="button" 
+                   target="_blank">View Backend</a>
+                <a href="https://github.com/SheCodesAus/debugging_ducks_frontend/blob/develop/README.md" 
+                   class="button button-secondary" 
+                   target="_blank">View Frontend</a>
+                <a href="https://the-good-list.netlify.app/" 
+                   class="button button-secondary" 
+                   target="_blank">Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
+
     <footer>
-      <a
-        href="https://www.linkedin.com/in/lisa-todesco-51aab129/?originalSubdomain=au"
-        target="_blank"
-        ><img
-          class="socials-icon"
-          src="images/linkedin.png"
-          alt="LinkedIn Profile - Lisa Todesco"
-      /></a>
-      <a href="https://github.com/todesclia" target="_blank"
-        ><img
-          class="socials-icon"
-          src="images/github.svg"
-          alt="GitHub Profile - Lisa Todesco"
-      /></a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/lisa-todesco-51aab129/?originalSubdomain=au" 
+           target="_blank" 
+           aria-label="LinkedIn Profile">
+          <img class="socials-icon" src="images/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/todesclia" 
+           target="_blank"
+           aria-label="GitHub Profile">
+          <img class="socials-icon" src="images/github.svg" alt="GitHub" />
+        </a>
+      </div>
     </footer>
   </body>
 </html>

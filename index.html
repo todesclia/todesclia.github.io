@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>My Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Lisa Todesco | Software Developer in Test</title>
   </head>
   <body>
     <header class="hero">
-      <img class="profile-pic" src="images/profile_pic.jpeg" />
-      <h1>Todesco</h1>
-      <nav>
+      <div class="hero-content">
+        <img class="profile-pic" src="images/profile_pic.jpeg" alt="Lisa Todesco" />
+        <h1>Lisa Todesco</h1>
+        <p class="subtitle">Software Developer in Test</p>
+      </div>
+      <nav class="main-nav">
         <ul>
           <li><a class="nav-button" href="projects.html">Projects</a></li>
           <li><a class="nav-button" href="about.html">About</a></li>
@@ -20,60 +26,73 @@
       </nav>
     </header>
     <main>
+      <section class="intro">
+        <div class="container">
+          <p>
+            Hey there! 👋<br />
+            I'm Lisa Todesco, a passionate Software Developer in Test (SDET) who believes in the power of quality code. 
+            I specialize in automated testing, ensuring software excellence, and supporting seamless deployments.
+          </p>
+          <p>
+            Think of me as a code whisperer and bug hunter, making sure every line of code is flawless. 
+            I thrive on collaboration with developers, designers, and product owners, always eager to learn and implement better solutions.
+          </p>
+          <p>
+            When I'm not crafting tests or spending time with family, you'll find me serving as an Event Ambulance Officer 
+            for St John Ambulance — a role that brings me immense pride and joy.
+          </p>
+        </div>
+      </section>
+
       <section class="articles-container">
         <article>
           <section>
             <p>
-              Hey there!<br />
-              Welcome, my name is Lisa Todesco and I'm currently rocking it as a
-              Software Developer in Test (SDET). I write automated tests, ensure
-              the highest standard of software quality, support daily
-              deployments, and advocate for continuous testing.<br />
-              Think of me as a code whisperer and bug hunter, making sure every
-              line of code is flawless.<br />
-              I love collaborating with fellow devs, designers, product owners
-              and learning new and better ways to do things every day.<br />
-              I'm ready to tackle new challenges and make the digital world a
-              better place, one test at a time! <br />When I am not elbow deep
-              in tests or spending time with my family, you will find me
-              volunteering as an Event Ambulance Officer for St John
-              Ambulance.<br />
-              Being a part of the St. John's community is a privilege and a joy.
+              Hey there! 👋<br />
+              I'm Lisa Todesco, a passionate Software Developer in Test (SDET) who believes in the power of quality code. 
+              I specialize in automated testing, ensuring software excellence, and supporting seamless deployments.
+            </p>
+            <p>
+              Think of me as a code whisperer and bug hunter, making sure every line of code is flawless. 
+              I thrive on collaboration with developers, designers, and product owners, always eager to learn and implement better solutions.
+            </p>
+            <p>
+              When I'm not crafting tests or spending time with family, you'll find me serving as an Event Ambulance Officer 
+              for St John Ambulance — a role that brings me immense pride and joy.
             </p>
           </section>
         </article>
         <article>
-          <img class="icon" src="images/design.png" alt="Design Icon" />
+          <img class="icon" src="images/web-dev-icon.svg" alt="Web Development Icon" />
           <p>HTML and CSS Newbie: My web dev adventure.</p>
           <a href="projects.html" class="article-button">Read more...</a>
         </article>
         <article>
-          <img class="icon" src="images/python.png" alt="Python Icon" />
+          <img class="icon" src="images/python-icon.svg" alt="Python Icon" />
           <p>Python Shenanignas: picture this, me a cup of coffee and a determination to conquer Python.</p>
           <a href="projects.html" class="article-button">Read more...</a>
         </article>
         <article>
-          <img class="icon" src="images/brain.png" alt="Brain Icon" />
+          <img class="icon" src="images/django-icon.svg" alt="Django Icon" />
           <p>Django Unchained: Wrangling web apps with pythonic prowess</p>
           <a href="projects.html" class="article-button">Read more...</a>
         </article>
       </section>
     </main>
+
     <footer>
-      <a
-        href="https://www.linkedin.com/in/lisa-todesco-51aab129/?originalSubdomain=au"
-        target="_blank"
-        ><img
-          class="socials-icon"
-          src="images/linkedin.png"
-          alt="LinkedIn Profile - Lisa Todesco"
-      /></a>
-      <a href="https://github.com/todesclia" target="_blank"
-        ><img
-          class="socials-icon"
-          src="images/github.svg"
-          alt="GitHub Profile - Lisa Todesco"
-      /></a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/lisa-todesco-51aab129/?originalSubdomain=au" 
+           target="_blank" 
+           aria-label="LinkedIn Profile">
+          <img class="socials-icon" src="images/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/todesclia" 
+           target="_blank"
+           aria-label="GitHub Profile">
+          <img class="socials-icon" src="images/github.svg" alt="GitHub" />
+        </a>
+      </div>
     </footer>
   </body>
 </html>

@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>My Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Contact | Lisa Todesco</title>
   </head>
   <body>
     <header class="hero">
-      <img class="profile-pic" src="images/profile_pic.jpeg" />
-      <h1>Todesco</h1>
-      <nav>
+      <div class="hero-content">
+        <h1>Contact Me</h1>
+        <p class="subtitle">Let's connect!</p>
+      </div>
+      <nav class="main-nav">
         <ul>
           <li><a class="nav-button" href="index.html">Home</a></li>
           <li><a class="nav-button" href="projects.html">Projects</a></li>
@@ -19,43 +24,59 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <section class="contact-form">
-        <h2>Contact me!</h2>
-        <form action="https://formspree.io/f/mzzprype" method="POST">
-          <div>
-            <label for="your-name">Your Name</label>
-            <input type="text" id="your-name" name="your-name" />
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h2>Get In Touch</h2>
+              <p>I'm always interested in hearing about new opportunities, collaborations, or just having a chat about technology and testing.</p>
+              
+              <div class="contact-methods">
+                <div class="contact-method">
+                  <h3>Email</h3>
+                  <a href="mailto:todesco@gmail.com" class="contact-link">
+                    todesco@gmail.com
+                  </a>
+                </div>
+                
+                <div class="contact-method">
+                  <h3>LinkedIn</h3>
+                  <a href="https://www.linkedin.com/in/lisa-todesco-51aab129/" 
+                     target="_blank"
+                     class="contact-link">
+                    Connect with me on LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="qr-code-container">
+              <h3>Scan to connect on LinkedIn</h3>
+              <img src="images/linkedin-qr.png" 
+                   alt="QR Code to LinkedIn Profile" 
+                   class="qr-code" />
+              <p class="qr-caption">Use your phone's camera to scan</p>
+            </div>
           </div>
-          <div>
-            <label for="your-email">Your Email</label>
-            <input type="text" id="your-email" name="your-email" />
-          </div>
-          <div>
-            <label for="message">Your Message</label>
-            <textarea name="message" id="message" rows="10"></textarea>
-          </div>
-          <div>
-            <button type="submit">Send</button>
-          </div>
-        </form>
+        </div>
       </section>
     </main>
+
     <footer>
-      <a
-        href="https://www.linkedin.com/in/lisa-todesco-51aab129/?originalSubdomain=au"
-        target="_blank"
-        ><img
-          class="socials-icon"
-          src="images/linkedin.png"
-          alt="LinkedIn Profile - Lisa Todesco"
-      /></a>
-      <a href="https://github.com/todesclia" target="_blank"
-        ><img
-          class="socials-icon"
-          src="images/github.svg"
-          alt="GitHub Profile - Lisa Todesco"
-      /></a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/lisa-todesco-51aab129/" 
+           target="_blank" 
+           aria-label="LinkedIn Profile">
+          <img class="socials-icon" src="images/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/todesclia" 
+           target="_blank"
+           aria-label="GitHub Profile">
+          <img class="socials-icon" src="images/github.svg" alt="GitHub" />
+        </a>
+      </div>
     </footer>
   </body>
 </html>

@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>My Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>About | Lisa Todesco</title>
   </head>
   <body>
     <header class="hero">
-      <img class="profile-pic" src="images/profile_pic.jpeg" />
-      <h1>Todesco</h1>
-      <nav>
+      <div class="hero-content">
+        <h1>About Me</h1>
+        <p class="subtitle">Get to know me better</p>
+      </div>
+      <nav class="main-nav">
         <ul>
           <li><a class="nav-button" href="index.html">Home</a></li>
           <li><a class="nav-button" href="projects.html">Projects</a></li>
@@ -19,46 +24,72 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <section class="articles-container">
-        <article>
-          <section>
-            <p>
-              Hey there!<br />
-              Welcome, my name is Lisa Todesco and I'm currently rocking it as a
-              Software Developer in Test (SDET). I write automated tests, ensure
-              the highest standard of software quality, support daily
-              deployments, and advocate for continuous testing.<br />
-              Think of me as a code whisperer and bug hunter, making sure every
-              line of code is flawless.<br />
-              I love collaborating with fellow devs, designers, product owners
-              and learning new and better ways to do things every day.<br />
-              I'm ready to tackle new challenges and make the digital world a
-              better place, one test at a time! <br />When I am not elbow deep
-              in tests or spending time with my family, you will find me
-              volunteering as an Event Ambulance Officer for St John
-              Ambulance.<br />
-              Being a part of the St. John's community is a privilege and a joy.
-            </p>
-          </section>
-        </article>
+      <section class="about-section">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-image">
+              <img src="images/profile_pic.jpeg" alt="Lisa Todesco" />
+            </div>
+            <div class="about-content">
+              <h2>Professional Journey</h2>
+              <p>As a Software Developer in Test (SDET), I've dedicated my career to ensuring software quality and reliability. 
+                My expertise spans automated testing, continuous integration, and quality assurance methodologies.</p>
+              
+              <h2>Skills & Expertise</h2>
+              <div class="skills-grid">
+                <div class="skill-category">
+                  <h3>Testing</h3>
+                  <ul>
+                    <li>Automated Testing</li>
+                    <li>Test Strategy</li>
+                    <li>Performance Testing</li>
+                    <li>API Testing</li>
+                  </ul>
+                </div>
+                <div class="skill-category">
+                  <h3>Programming</h3>
+                  <ul>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                  </ul>
+                </div>
+                <div class="skill-category">
+                  <h3>Tools</h3>
+                  <ul>
+                    <li>Git</li>
+                    <li>Jenkins</li>
+                    <li>Selenium</li>
+                    <li>Postman</li>
+                  </ul>
+                </div>
+              </div>
+
+              <h2>Volunteering</h2>
+              <p>Outside of my professional life, I serve as an Event Ambulance Officer for St John Ambulance. 
+                This role allows me to give back to the community while developing crucial emergency response skills.</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+
     <footer>
-      <a
-        href="https://www.linkedin.com/in/lisa-todesco-51aab129/?originalSubdomain=au"
-        target="_blank"
-        ><img
-          class="socials-icon"
-          src="images/linkedin.png"
-          alt="LinkedIn Profile - Lisa Todesco"
-      /></a>
-      <a href="https://github.com/todesclia" target="_blank"
-        ><img
-          class="socials-icon"
-          src="images/github.svg"
-          alt="GitHub Profile - Lisa Todesco"
-      /></a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/lisa-todesco-51aab129/?originalSubdomain=au" 
+           target="_blank" 
+           aria-label="LinkedIn Profile">
+          <img class="socials-icon" src="images/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/todesclia" 
+           target="_blank"
+           aria-label="GitHub Profile">
+          <img class="socials-icon" src="images/github.svg" alt="GitHub" />
+        </a>
+      </div>
     </footer>
   </body>
 </html>
