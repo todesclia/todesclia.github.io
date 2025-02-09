@@ -41,6 +41,8 @@ h1, h2, h3 {
   color: white;
   padding: var(--spacing-unit) 0;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content {
@@ -93,12 +95,22 @@ h1, h2, h3 {
 /* Intro Section */
 .intro {
   padding: var(--spacing-unit) 0;
+  background: var(--bg-light);
+}
+
+.intro .container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .intro p {
-  max-width: 800px;
-  margin: 0 auto 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.intro p:last-child {
+  margin-bottom: 0;
 }
 
 /* Projects Preview */
@@ -474,6 +486,12 @@ footer {
   color: var(--secondary-color);
 }
 
+.qr-codes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .qr-code-container {
   background: white;
   padding: 2rem;
@@ -485,41 +503,16 @@ footer {
 .qr-code-container h3 {
   color: var(--primary-color);
   margin-bottom: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .qr-code {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   margin: 1rem 0;
   background: white;
   padding: 0.5rem;
   border-radius: 4px;
-}
-
-.qr-caption {
-  color: #666;
-  font-size: 0.9rem;
-  margin-top: 1rem;
-}
-
-/* Dark mode adjustments */
-@media (prefers-color-scheme: dark) {
-  .qr-code-container {
-    background: var(--primary-color);
-  }
-
-  .qr-code-container h3,
-  .contact-link {
-    color: white;
-  }
-
-  .qr-caption {
-    color: #ccc;
-  }
-
-  .qr-code {
-    background: white;
-  }
 }
 
 /* Responsive adjustments */
@@ -529,23 +522,38 @@ footer {
     gap: 2rem;
   }
 
-  .qr-code-container {
+  .qr-codes {
     max-width: 400px;
     margin: 0 auto;
+  }
+}
+
+/* For larger screens, optionally show QR codes side by side */
+@media (min-width: 1200px) {
+  .qr-codes {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .qr-code-container {
+    flex: 1;
   }
 }
 
 /* Articles Container Styles */
 .articles-container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem var(--spacing-unit);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin: 2rem auto;
+  padding: 0 var(--spacing-unit);
+  display: flex;
+  justify-content: space-between;
   gap: 2rem;
 }
 
 .articles-container article {
+  flex: 1;
+  min-width: 0;
   background: white;
   border-radius: 10px;
   padding: 2rem;
@@ -559,6 +567,13 @@ footer {
 
 .articles-container article:hover {
   transform: translateY(-5px);
+}
+
+.articles-container article p {
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
 }
 
 /* Icon Styles */
@@ -610,6 +625,7 @@ footer {
 }
 
 /* First Article (Intro) Specific Styles */
+/* DELETE START
 .articles-container article:first-child {
   grid-column: 1 / -1;
   text-align: left;
@@ -627,12 +643,26 @@ footer {
   margin: 0 auto 1rem;
   font-size: 1.1rem;
 }
+DELETE END */
 
 /* Responsive Adjustments */
+@media (max-width: 992px) {
+  .articles-container {
+    flex-wrap: wrap;
+  }
+  
+  .articles-container article {
+    flex-basis: calc(50% - 1rem);
+  }
+}
+
 @media (max-width: 768px) {
   .articles-container {
-    grid-template-columns: 1fr;
-    padding: 1rem;
+    flex-direction: column;
+  }
+  
+  .articles-container article {
+    flex-basis: 100%;
   }
 
   .icon {
@@ -708,3 +738,24 @@ footer {
     border-color: white;
   }
 }
+
+/* Add this to your existing CSS */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 300px;
+}
+
+/* Simplify the scroll margin styles */
+[id] {
+  scroll-margin-top: 300px;
+}
+
+/* Remove any duplicate transition properties */
+.project-card {
+  transition: transform 0.3s ease;
+}
+
+/* Remove this since we're consolidating the styles */
+/* #django-projects {
+  scroll-margin-top: 100px;
+} */
